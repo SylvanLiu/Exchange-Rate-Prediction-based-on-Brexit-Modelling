@@ -5,6 +5,8 @@ Project aims to combine the chronological data of Brexit events and EUR as well 
 Firstly, it makes a rough prediction according to the historical exchange rate data of GBP to EUR.
 This has been implemented in tendency_prediction.py, around a Clockwork RNN (Jan Koutník, 2014) https://arxiv.org/abs/1402.3511
 
+The authorised data of exchange rates come from online database https://fred.stlouisfed.org/series/DEXUSUK and https://fred.stlouisfed.org/series/DEXUSEU
+
 Secondly, it is going to optimise the rough tendency by involving the model of Brexit events.
 The Brexit event data 'BREXIT.csv' come from the website https://www.theweek.co.uk/100284/brexit-timeline-key-dates-in-the-uk-s-break-up-with-the-eu
 
