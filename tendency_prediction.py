@@ -11,7 +11,7 @@ import os
 import io
 import seaborn as sns
 import matplotlib.pyplot as plt
-# Koutnik, J., Greff, K., Gomez, F. and Schmidhuber, J., 2014. A clockwork rnn. arXiv preprint arXiv:1402.3511.
+# https://github.com/flandolfi/clockwork-rnn/blob/master/cwrnn.py
 from cwrnn import ClockworkRNN
 from keras.datasets.imdb import load_data
 from keras.callbacks import EarlyStopping
