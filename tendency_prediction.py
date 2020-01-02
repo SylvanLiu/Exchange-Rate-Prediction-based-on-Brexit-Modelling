@@ -2,13 +2,6 @@
 __author__ = "SylvanLiu"
 
 
-# Try LSTM, NN and other structure.
-# Implement a validation approach.
-# Set a prediction starts date. ✅
-# Load real-time data from internet. ✅
-# Fix the problem that dates in future can contain currency market holidays and weekend days. ✅
-
-
 from decimal import Decimal
 import datetime as dt
 import numpy as np
