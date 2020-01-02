@@ -1,0 +1,2 @@
+# msc
+ideas for fun.
