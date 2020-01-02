@@ -1,17 +1,14 @@
-"""get_TypeL.py: Get a type label of Brexit events from exchange rate changing tendency."""
-__author__ = "Siyuan Liu"
+"""tendency_prediction.py: Make a prediction to the exchange rate tendency of a period of days in the future."""
+__author__ = "SylvanLiu"
 
 
-# Try LSTM and NN with other structure.
+# Try LSTM, NN and other structure.
+# Implement a validation approach.
 # Set a prediction starts date. ✅
-# Implement a validation approach.✅
 # Load real-time data from internet. ✅
-# Tackle the problem that dates in future can contain currency market holidays and weekend days inside. ✅
+# Fix the problem that dates in future can contain currency market holidays and weekend days. ✅
 
 
-""" Global configuration variables """
-
-# Patience of earlystopping.
 from decimal import Decimal
 import datetime as dt
 import numpy as np
@@ -21,6 +18,7 @@ import os
 import io
 import seaborn as sns
 import matplotlib.pyplot as plt
+# Koutnik, J., Greff, K., Gomez, F. and Schmidhuber, J., 2014. A clockwork rnn. arXiv preprint arXiv:1402.3511.
 from cwrnn import ClockworkRNN
 from keras.datasets.imdb import load_data
 from keras.callbacks import EarlyStopping
@@ -28,20 +26,24 @@ from keras.models import Sequential
 from keras import backend as K
 from pandas import DataFrame
 import pandas as pd
+
+
+""" Global configuration variables """
+
+
+# Patience of earlystopping.
 patience = 32
 # Epochs of model learning.
 epochs = 512
 # Defind global loop time, one round will take about 1 min.
 loop_time = 1024
-# 'Refresh Times': Define how many times that the error needs to be refreshed(diminished) before iteration stopped.
-# 8 is totally enough.
+# Define how many times that the error needs to be refreshed(diminished) before iteration stopped.
 refresh_times = 16
-# Define the dates' length that are going to predict.
+# Define the dates length that are going to be predicted.
 predict_Length = 32
 # The exchange rate brfore '2016-7-13' is too special.
 initial_date = pd.Timestamp('2016-7-13')
 # Set a date and let the prediction starts from that day.
-# The last day so far is 2019-11-29.
 predict_date = pd.Timestamp('2019-11-20')
 
 
@@ -52,7 +54,7 @@ def hasNumbers(inputString):
     return any(char.isdigit() for char in inputString)
 
 
-""" Send request to get the datasets of exchange rate in time order of US to UK and US to EU,
+""" Send request to get the real time online datasets of exchange rate of US to UK and US to EU,
 then generate a dataset of UK to EU """
 
 
@@ -491,17 +493,6 @@ def evaluate_PerOfPre(future_rate):
         return e_average
     else:
         return 0
-
-
-# For machine learning.
-# from keras.utils import plot_model
-# A Clockwork RNN (Jan Koutník 2014)
-# Extended ploting lib.
-# Libs for sending interent request.
-# Extended datetime var-type integrated lib.
-# Defimal precise calculation lib.
-# # Print information without abbreviation.
-# np.set_printoptions(threshold=np.inf)
 
 
 """ Global Pre-processing"""
