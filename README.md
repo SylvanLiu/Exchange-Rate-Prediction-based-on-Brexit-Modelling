@@ -11,4 +11,5 @@ Secondly, it is going to optimise the rough tendency by involving the model of B
 The Brexit event data 'BREXIT.csv' come from the website https://www.theweek.co.uk/100284/brexit-timeline-key-dates-in-the-uk-s-break-up-with-the-eu
 
 [1] Koutnik, J., Greff, K., Gomez, F. and Schmidhuber, J., 2014. A clockwork rnn. arXiv preprint arXiv:1402.3511.
+
 [2] Federal Reserve Bank of San Francisco, 2017. Brexit: Whither the Pound? [online] Available at: https://www.frbsf.org/economic-research/publications/economic-letter/2017/april/brexit-whither-the-pound/ [Accessed 31 Oct. 2019].
