@@ -11,3 +11,6 @@ The Brexit event data 'BREXIT.csv' come from the website https://www.womblebondd
 [1] Koutnik, J., Greff, K., Gomez, F. and Schmidhuber, J., 2014. A clockwork rnn. arXiv preprint arXiv:1402.3511. [online] Available at: https://arxiv.org/abs/1402.3511
 
 [2] Federal Reserve Bank of San Francisco, 2017. Brexit: Whither the Pound? [online] Available at: https://www.frbsf.org/economic-research/publications/economic-letter/2017/april/brexit-whither-the-pound/
+
+## Predicted Result
+![alt text](https://github.com/SylvanLiu/ExchangeRatePrediction/blob/master/Prediction.png)
