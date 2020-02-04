@@ -1,0 +1,1 @@
+{"name":"Poll results from WhatUKThinks: EU - ","Created":"30 Jan 2020","Source":null,"resources":[{"path":"data.csv","schema":{"fields":[{"name":"Fieldwork End Date \/ Pollster","type":"string"},{"name":"To leave the EU","type":"string"},{"name":"To remain a member of the EU","type":"string"},{"name":"Would not vote","type":"string"},{"name":"Don't know","type":"string"}]}}]}

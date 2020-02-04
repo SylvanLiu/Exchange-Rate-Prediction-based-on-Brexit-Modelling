@@ -1,0 +1,10 @@
+Poll results from WhatUKThinks: EU - 
+
+Created: 30 Jan 2020
+Source: data collated at www.WhatUKThinks.org/EU run by NatCen Social Research - 
+
+Data file: data.csv
+Data descriptor: datapackage.json
+Data descriptor (alt): info.txt
+Data Fields: Fieldwork End Date / Pollster, To leave the EU, To remain a member of the EU, Would not vote, Don't know
+
