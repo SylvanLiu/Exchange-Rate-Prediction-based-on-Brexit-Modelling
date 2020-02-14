@@ -1,18 +1,17 @@
 # ExchangeRatePrediction
 
+This is proposed for my personal favour, and implemented by data analysis, mathematical modeling, also by reproducing a Clockwork RNN(Jan Koutník, 2014) .
+
 Firstly, it makes a rough prediction according to the historical data of the exchange rate of GBP to EUR.
-This has been implemented in tendency_prediction.py, according to the Clockwork RNN (Jan Koutník, 2014) 
+This has been implemented in tendency_prediction.py. The authorised data of exchange rates come from online database https://fred.stlouisfed.org/categories/15 (The file 'GBP2EUR.csv is merely an example that shows the shape of the final data we requested from the internet.')
 
-The authorised data of exchange rates come from online database https://fred.stlouisfed.org/categories/15 (The file 'GBP2EUR.csv is merely an example that shows the shape of the final data we requested from the internet.')
-
-Secondly, it is going to optimise the rough tendency by involving the model of Brexit events.
-The Brexit event data 'BREXIT.csv' come from the website https://www.womblebonddickinson.com/uk/insights/timelines/brexit-timeline (This part is still in progress.)
+Secondly, it is going to optimise/refine the rough tendency by involving the model of Brexit events, based on clustering and regression technologies. The Brexit event data 'BREXIT.csv' come from the website https://www.womblebonddickinson.com/uk/insights/timelines/brexit-timeline (This part is still in progress.)
 
 [1] Koutnik, J., Greff, K., Gomez, F. and Schmidhuber, J., 2014. A clockwork rnn. arXiv preprint arXiv:1402.3511. [online] Available at: https://arxiv.org/abs/1402.3511
 
 [2] Federal Reserve Bank of San Francisco, 2017. Brexit: Whither the Pound? [online] Available at: https://www.frbsf.org/economic-research/publications/economic-letter/2017/april/brexit-whither-the-pound/
 
-## Predicted Result
+## Predicted Result (Roughly)
 ![alt text](https://github.com/SylvanLiu/ExchangeRatePrediction/blob/master/Prediction.png)
 
 #### 短期内走势类别定义:
