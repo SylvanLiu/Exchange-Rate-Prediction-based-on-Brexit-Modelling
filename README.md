@@ -1,6 +1,6 @@
 # ExchangeRatePrediction
 
-This project is proposed for my interest in exploring the impact of Brexit event on the exchange rate between the RU and the UK and implemented by machine learning related approaches.
+This project is proposed for my interest in exploring the influence of Brexit on the exchange rate.
 
 Firstly, it makes a rough prediction only according to the historical data of the exchange rate of GBP to EUR, by reproducing/using a specific Clockwork RNN(Jan Koutník, 2014).
 
