@@ -20,4 +20,4 @@ We concern the differences between m values of the true exchange rate and the m 
 ![alt text](https://github.com/SylvanLiu/ExchangeRatePrediction/blob/master/Prediction.png)
 
 ## Predicted Result (Precisely)
-![alt text](https://github.com/SylvanLiu/ExchangeRatePrediction/blob/master/Prediction_.png
+
