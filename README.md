@@ -5,14 +5,21 @@ This project is proposed for my interest in exploring the influence of Brexit on
 Firstly, it makes a rough prediction only according to the historical data of the exchange rate of GBP to EUR, by reproducing/using a specific Clockwork RNN(Jan Koutník, 2014).
 
 Secondly, the first feature of every Brexit event is its inherent type, finished by Womble Bond Dickinson (UK) LLP, as 
-0.Case;
-1.Consultation;
-2.Event;
-3.General;
-4.Legislation;
-5.Negotiation;
-6.Mixed(additionally added).
-And the second feature is its ability, defined as in what extent can it suddenly change the previous tendency, times how long can the later tendency last; The third feature is involved from another dataset -- the public opinion of UK citizens about Brexit.
+
+0.Case
+
+1.Consultation
+
+2.Event
+
+3.General
+
+4.Legislation
+
+5.Negotiation
+
+6.Mixed(additionally added);
+and the second feature is its ability, defined as in what extent can it suddenly change the previous tendency, times how long can the later tendency last; the third feature is involved from another dataset -- the public opinion of UK citizens about Brexit.
 
 
 Finally, it is going to optimise/refine the rough tendency by learning the features of BEs through a multilayer perceptron, with the n input(n is the number of BE features), and m output(m is the number of how many days after that BE). 
