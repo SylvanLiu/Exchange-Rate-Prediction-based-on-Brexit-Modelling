@@ -1,6 +1,6 @@
 # ExchangeRatePrediction
 
-This project is proposed for my curiosity in exploring the influence of Brexit on the exchange rate.
+This project is proposed for my curiosity in exploring the influence of Brexit on the exchange rate, some parts may be not completed.
 
 Firstly, it makes a rough prediction only according to the historical data of the exchange rate of GBP to EUR, by reproducing/using a specific Clockwork RNN(Jan Koutník, 2014).
 
