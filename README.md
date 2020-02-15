@@ -1,11 +1,14 @@
 # ExchangeRatePrediction
 
-This is proposed for my personal favour, and implemented by data analysis, mathematical modeling, also by reproducing a Clockwork RNN(Jan Koutník, 2014) .
+This is proposed for my personal interest about exploring the impact of Brexit event on the exchange rate between the RU and the UK, and implemented by machine learning related approaches.
 
-Firstly, it makes a rough prediction according to the historical data of the exchange rate of GBP to EUR.
-This has been implemented in tendency_prediction.py. The authorised data of exchange rates come from online database https://fred.stlouisfed.org/categories/15 (The file 'GBP2EUR.csv is merely an example that shows the shape of the final data we requested from the internet.')
+Firstly, it makes a rough prediction only according to the historical data of the exchange rate of GBP to EUR, by using(reproducing) the Clockwork RNN(Jan Koutník, 2014).
 
-Secondly, it is going to optimise/refine the rough tendency by involving the model of Brexit events, based on clustering and regression technologies. The Brexit event data 'BREXIT.csv' come from the website https://www.womblebonddickinson.com/uk/insights/timelines/brexit-timeline (This part is still in progress.)
+*The authorised data of exchange rates come from the online database https://fred.stlouisfed.org/categories/15 (The file 'GBP2EUR.csv' is merely an example that shows the shape of the final data we requested from the internet.)*
+
+Secondly, it is going to optimise/refine the rough tendency by learning the features of 'Brexit Events'(BEs) through a multilayer perceptron, with the n input(n is the number of BE features), and m output(m is the number of how many days after that BR). We concern the differences between m values of the true exchange rate and the m values predicted by cwrnn as the expected values of m output, so the errors are the differences between the output values and their expected value, then adjust the weights by backpropagation those errors. We train it with all happened BEs iteratively, and we assume the features that new BE has, then input features into the trained model, and predict the more precise future tendency by adding output values on the rough tendency.
+
+The Brexit event data 'BREXIT.csv' come from the website https://www.womblebonddickinson.com/uk/insights/timelines/brexit-timeline
 
 [1] Koutnik, J., Greff, K., Gomez, F. and Schmidhuber, J., 2014. A clockwork rnn. arXiv preprint arXiv:1402.3511. [online] Available at: https://arxiv.org/abs/1402.3511
 
